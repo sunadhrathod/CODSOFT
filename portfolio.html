@@ -1,0 +1,718 @@
+<html>
+
+<head>
+    <title>
+        TASK 1: TO-DO LIST
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+    background-color: aquamarine;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #578c7b;
+    padding: 15px;
+    overflow: hidden;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.navbar-mainlogo{
+    padding-left: 35px;
+}
+.navbar-mainhead{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 155px;
+    transition: transform 0.3s ease;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h1{
+    transition: transform 0.3s ease;
+}
+h1:hover{
+    transform: scale(1.2);
+}
+.navbar-mainhead:hover{
+    transform: scale(1.2);
+    /color:chocolate;/
+}
+.navbar-mainsocials{
+    padding: 15px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-n{
+    padding: 2px;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    transition: transform 0.3s ease;
+}
+.navbar-n:hover{            
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+.main-outer{
+    margin: 10px;
+    padding: 10px;
+    background-color: pink;
+    align-items: center;
+    border-radius: 0.75%;
+}
+.namepfpbio{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.namebio{
+    width: 70%;
+    padding: 10px;
+    padding-left: 40px;
+    justify-content: center;
+    font-size: 25px;
+}
+.namebio span u {
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+.pfp{
+    width: 30%;
+}
+.pfp img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contactdetails{
+    background-color: deepskyblue ;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contactdetails h1{
+    padding: 30px;
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+.contactdetails table{
+    text-align: center;
+}
+
+
+.skillproj{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px;
+    background-color:brown;
+    border-radius: 20px;
+}
+.skill{
+    padding: 20px;
+    width: 45%;
+    background-color: burlywood;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.proj{
+    padding: 20px;
+    width: 45%;
+    background-color:chartreuse;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.skillproj  h1 {
+    text-decoration: underline;
+}
+
+.resume{
+    padding: 10px;
+    border-radius: 2%;
+    background-color: cornsilk;
+    text-align: center;
+}
+.resume iframe{
+    width: 60%;
+    height: 800px;
+    border-radius: 2%;
+}
+.resume span{
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+.ejukesan{
+    border-radius: 2%;
+    padding: 10px;
+    background-color:darkgray;
+}
+.ejukesan table tr, td{
+    width: 250px;
+    height: 40px;
+    background-color: beige;
+}
+.ejukesan table th{
+    font-size: 18px;
+}
+
+.ejukesan table td,th{
+    border-radius: 2%;
+}
+.sno{
+    width: 70px;
+}
+.ejukesan span h1{
+    
+    text-decoration: underline;
+}
+.exp td{
+    text-align: center;
+}
+.exp h1{
+    text-decoration-line: underline;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+/* .exp th{
+    background-color: aliceblue;
+} */
+.exp{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:darkturquoise;
+}
+.exp th{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.exp table{
+    font-size: 15px;
+    padding: 10px;
+    width: 70%;
+}
+.orgpic{
+    width: 100px;
+}
+.orgpic img{
+    width: 100px;
+    height: 100px; 
+}
+marquee{
+    font-size: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-mainlogo">
+            <img class="navbar-n" src="https://cdn1.iconfinder.com/data/icons/capsocial/500/iconfinder-512.png"
+                alt="logo">
+        </div>
+        <div class="navbar-mainhead">
+            <h1>
+                <center>
+                    CODSOFT INTERNSHIP <br> <u>PERSONAL PORTFOLIO</u>
+                </center>
+            </h1>
+        </div>
+        <div class="navbar-mainsocials">
+            <a href="https://www.linkedin.com/in/kartikey-here/">
+                <img class="navbar-n"
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square1-512.png"
+                    alt="linkedin">
+            </a>
+            <a href="https://www.instagram.com/kartikey_._here/">
+                <img class="navbar-n"
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png"
+                    alt="ig">
+            </a>
+            <a href="https://twitter.com/kartikey_here">
+                <img class="navbar-n"
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png"
+                    alt="twitter">
+            </a>
+            <a href="https://www.reddit.com/user/cooolkits">
+                <img class="navbar-n"
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-reddit-square1-512.png"
+                    alt="reddit">
+            </a>
+        </div>
+    </nav>
+    <div class="main-outer">
+        <div class="namepfpbio">
+            <div class="namebio">
+                <br><br><br>
+                <span>
+                    <u>Banavath Sunadh Rathod </u><br><br>
+                    I am a dedicated and hardworking 3rd year BTech student
+                    at Mohan Babu University Tirupati, set to
+                    graduate in 2026. <br><br>
+                    With knowledge in
+                    programming languages, including C, C++, Java, C#, Python, databases Oracle, MySQL, MongoDB,
+                    HTML, CSS and JS, I am committed to delivering quality work
+                    and am constantly seeking opportunities to enhance my
+                    skills and learn new technologies. <br><br>
+                    I strongly believe that
+                    dedication and hard work are the keys to success, and I
+                    am determined to achieve my goals.
+                </span>
+            </div>
+            
+        </div>
+        <br>
+        <div class="contactdetails">
+            <center>
+                <h1>Basic Details</h1>
+                <table>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Banavath Sunadh Rathod
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ph No.
+                        </td>
+                        <td>
+                            +91 8247354987
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-Mail
+                        </td>
+                        <td>
+                            sunadhrathod501@gmail.com
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            DOB
+                        </td>
+                        <td>
+                            23-12-2004
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address
+                        </td>
+                        <td>
+                            Tirupati,Andhra  Pradesh
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <br>
+        <div class="ejukesan">
+            <center>
+                <span>
+                    <h1>Educational Details</h1>
+                </span>
+                <br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="sno">S. No</th>
+                            <th class="cour">Course</th>
+                            <th>Year</th>
+                            <th>Percentage</th>
+                            <th>Institute Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sno">
+                                <center>1</center>
+                            </td>
+                            <td class="cour">
+                                <center>B.Tech</center>
+                            </td>
+                            <td>
+                                <center>2022-2026</center>
+                            </td>
+                            <td>
+                                <center>77%</center>
+                            </td>
+                            <td>
+                                <center>Mohan Babu  University (MBU)</center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sno">
+                                <center>2</center>
+                            </td>
+                            <td class="cour">
+                                <center>Intermediate</center>
+                            </td>
+                            <td>
+                                <center>2020-2022</center>
+                            </td>
+                            <td>
+                                <center>92%</center>
+                            </td>
+                            <td>
+                                <center>Army Public School, Prayagraj</center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sno">
+                                <center>3</center>
+                            </td>
+                            <td class="cour">
+                                <center>High School</center>
+                            </td>
+                            <td>
+                                <center>2019-20120</center>
+                            </td>
+                            <td>
+                                <center>92.4%</center>
+                            </td>
+                            <td>
+                                <center>Army Public School, Prayagraj</center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <br>
+        <div class="skillproj">
+            <div class="skill">
+                <center>
+                    <h1>Skills</h1> <br><br><br>
+                    <span>
+                        Web Design <br>
+                        C, C++ ,C#<br>
+                        Java<br>
+                        Python<br>
+                        HTML<br>
+                        CSS<br>
+                        JavaScript<br>
+                        MySQL<br>
+                        MongoDB<br>
+                        Oracle
+                    </span>
+                </center>
+            </div>
+            <div class="proj">
+                <center>
+                    <h1>Projects</h1> <br><br>
+                    <span>
+                        To-Do List <br>
+                        Student Enrollment System<br>
+                        Calculator<br>
+                        Personal Portfolio<br>
+                        create-react app<br>
+                        NetFlix Clone (In Progress)<br>
+                        Landing Page<br>
+                        Currency Converter (In Progress)<br>
+                        CountDown Timer (In Progress)<br>
+                        Music Streaming Application <br>
+                        URL Shortener <br>
+                    </span>
+                </center>
+            </div>
+        </div>
+        <br>
+        <div class="exp">
+            <h1>Profesional Experience</h1>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="orgpic">
+
+                            </th>
+                            <th>
+                                Organization/Company
+                            </th>
+                            <th>
+                                Duration
+                            </th>
+                            <th>
+                                Job Role
+                            </th>
+                            <th>
+                                Domain
+                            </th>
+                            <th>
+                                Internship/Job
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/technohacks.jpeg" alt="technohacks">
+                            </td>
+                            <td>
+                                TechnoHacks Edutech
+                            </td>
+                            <td>
+                                1month <br> August2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/codealpha.jpeg" alt="codealpha">
+                            </td>
+                            <td>
+                                Code Alpha
+                            </td>
+                            <td>
+                                1month <br> August2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/herody.jpeg" alt="herody">
+                            </td>
+                            <td>
+                                Herody
+                            </td>
+                            <td>
+                                1month <br> May2k23
+                            </td>
+                            <td>
+                                Campus Ambassador
+                            </td>
+                            <td>
+                                Marketing Internship
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/codsoft.jpeg" alt="codsoft">
+                            </td>
+                            <td>
+                                CodSoft
+                            </td>
+                            <td>
+                                1month <br> August2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/bharat intern.jpeg" alt="bharat intern">
+                            </td>
+                            <td>
+                                Bharat Intern
+                            </td>
+                            <td>
+                                1month <br> August2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/teachnook.jpeg" alt="teachnook">
+                            </td>
+                            <td>
+                                Teachnook
+                            </td>
+                            <td>
+                                3month <br> June-August 2k23
+                            </td>
+                            <td>
+                                Data Science Intern
+                            </td>
+                            <td>
+                                Data Science
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/codeclause.jpeg" alt="codeclause">
+                            </td>
+                            <td>
+                                CodeClause
+                            </td>
+                            <td>
+                                1month <br> July2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/letsgrowmore.jpeg" alt="letsgrowmore">
+                            </td>
+                            <td>
+                                Lets Grow More
+                            </td>
+                            <td>
+                                1month <br> August2k23
+                            </td>
+                            <td>
+                                Web Developer Intern
+                            </td>
+                            <td>
+                                Web Development
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/nayepankh.jpg" alt="nayepankh">
+                            </td>
+                            <td>
+                                NayePankh Foundation
+                            </td>
+                            <td>
+                                1month <br> June2k23
+                            </td>
+                            <td>
+                                Community Influencer Intern
+                            </td>
+                            <td>
+                                Community Influencing
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/hamaripehchan.jpeg" alt="hamaripehchan NGO">
+                            </td>
+                            <td>
+                                Hamari Pehchan NGO
+                            </td>
+                            <td>
+                                1month <br> May2k23
+                            </td>
+                            <td>
+                                Social Enterpreneur Intern
+                            </td>
+                            <td>
+                                Social Enterpreneurship
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                           
+                            <td>
+                                Hariyali
+                            </td>
+                            <td>
+                                1month <br>June2k21
+                            </td>
+                            <td>
+                                Content Writier Intern
+                            </td>
+                            <td>
+                                Content Writing
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="orgpic">
+                                <img src="data/aadox.jpeg" alt="Aadox">
+                            </td>
+                            <td>
+                                Aadox
+                            </td>
+                            <td>
+                                1month <br> July2k21
+                            </td>
+                            <td>
+                                Content Writer Intern
+                            </td>
+                            <td>
+                                Content Writing
+                            </td>
+                            <td>
+                                Internship <br> (Remote/WFH)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <br>
+       
+        
+        <marquee>Sunadh Rathod 2k25. Thanks For Visiting. Have A Nice Day</marquee>
+    </div>
+
+</body>
+
+</html>
